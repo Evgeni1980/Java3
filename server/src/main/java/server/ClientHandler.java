@@ -75,9 +75,9 @@ public class ClientHandler {
                         }
                     }
                     //цикл работы
-                    socket.setSoTimeout(0);
-                    while (authenticated) {
 
+                    while (authenticated) {
+                        socket.setSoTimeout(0);
                         String str = in.readUTF();
 
                         if (str.startsWith("/")) {

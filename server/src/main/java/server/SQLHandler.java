@@ -11,7 +11,7 @@ public class SQLHandler {
     public static boolean connect () {
         try {
             Class.forName("org.sqlite.JDBC"); //Загрузчик классов, позволяет по имени загружать классы
-            connection = DriverManager.getConnection("jdbc:sqlite:User_chat.db"); // Указывается расп. БД
+            connection = DriverManager.getConnection("jdbc:sqlite:chat.db"); // Указывается расп. БД
             prepareAllStatements();
             return true;
         } catch (Exception e) {

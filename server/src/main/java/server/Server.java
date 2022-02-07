@@ -22,7 +22,7 @@ public class Server {
 
     public Server() {
         clients = new CopyOnWriteArrayList<>();
-//        authService = new SimpleAuthService();
+ //       authService = new SimpleAuthService();
 
         //========================================//
         if (!SQLHandler.connect()) {
